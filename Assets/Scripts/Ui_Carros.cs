@@ -22,7 +22,9 @@ public class Ui_Carros : MonoBehaviour
         velT.text = meuCarro.GetComponent<NavMeshAgent>().speed.ToString()+" Km/h";
         posT.text = "Pos: "+meuCarro.pos.ToString();
 
-        if(meuCarro.volta == 2)
+       
+
+        if (meuCarro.volta == 2 )
         {
             Time.timeScale= 0;
             Telavitoria.SetActive(true);
